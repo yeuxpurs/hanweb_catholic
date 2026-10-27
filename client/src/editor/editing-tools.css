@@ -1,0 +1,35 @@
+.hanweb-editing-tools,.hanweb-find-panel { flex-shrink:0; background:#fff; border-bottom:1px solid #d4dce6; color:#26344a; font-size:12px; }
+.hanweb-tools-row,.hanweb-find-panel { display:flex; flex-wrap:wrap; align-items:center; gap:6px 10px; padding:7px 12px; }
+.hanweb-tools-row label,.hanweb-find-panel label { display:inline-flex; align-items:center; gap:5px; white-space:nowrap; }
+.hanweb-editing-tools button,.hanweb-find-panel button { padding:4px 8px; border:1px solid #d4dce6; border-radius:4px; background:#f8fafc; color:inherit; cursor:pointer; }
+.hanweb-editing-tools button:hover,.hanweb-find-panel button:hover { background:#eaf2ff; border-color:#6da2e5; }
+.hanweb-editing-tools button:disabled,.hanweb-find-panel button:disabled { opacity:.45; cursor:default; }
+.hanweb-editing-tools input:not([type=checkbox]):not([type=color]),.hanweb-editing-tools select,.hanweb-find-panel input:not([type=checkbox]) { height:26px; padding:3px 5px; border:1px solid #c6d1df; border-radius:3px; max-width:180px; background:white; color:#26344a; }
+.hanweb-number-setting input { width:52px; }
+.hanweb-editing-tools input[type=color] { width:28px; height:25px; padding:1px; border:1px solid #c6d1df; }
+.hanweb-tools-hint { color:#68788b; font-size:11px; }
+.hanweb-find-panel { background:#f0f6ff; }
+.hanweb-search-match { background:#fff099; }
+.hanweb-search-match.active { background:#ffbe5e; outline:1px solid #cc7b00; }
+.ProseMirror .hanweb-page-break { position:relative; height:22px; border-top:1px dashed #97a8bf; margin:12px 0; user-select:none; }
+.ProseMirror .hanweb-page-break::after { content:"쪽 나누기"; position:absolute; top:-9px; left:calc(50% - 34px); padding:0 7px; background:white; font:11px sans-serif; color:#627591; }
+.ProseMirror .hanweb-image-frame { position:relative; display:block; max-width:100%; margin:10px 0; }
+.ProseMirror .hanweb-image-frame[data-alignment=center] { margin-left:auto; margin-right:auto; }
+.ProseMirror .hanweb-image-frame[data-alignment=right] { margin-left:auto; margin-right:0; }
+.ProseMirror .hanweb-image-frame img { display:block; max-width:100%; object-fit:contain; height:auto; margin:0; }
+.ProseMirror .hanweb-image-frame figcaption { text-align:center; color:#516070; font-size:9pt; margin-top:5px; }
+.ProseMirror .hanweb-image-frame.ProseMirror-selectednode { outline:2px solid #2679da; outline-offset:3px; }
+.hanweb-image-resize { display:none; position:absolute; right:-6px; bottom:-6px; width:13px; height:13px; background:#2679da; border:2px solid white; cursor:nwse-resize; padding:0; }
+.ProseMirror-selectednode .hanweb-image-resize { display:block; }
+.hanweb-editing-tools :focus-visible,.hanweb-find-panel :focus-visible { outline:2px solid #2679da; outline-offset:2px; }
+.tiptap.ProseMirror h1,.tiptap.ProseMirror h2,.tiptap.ProseMirror h3,.tiptap.ProseMirror h4,.tiptap.ProseMirror h5,.tiptap.ProseMirror h6 { margin:.65em 0 .35em; }
+.tiptap.ProseMirror h1 { font-size:2em; }
+.tiptap.ProseMirror h2 { font-size:1.5em; }
+.tiptap.ProseMirror h3 { font-size:1.17em; }
+@media print {
+  .hanweb-editing-tools,.hanweb-find-panel,.hanweb-image-resize { display:none!important; }
+  .hanweb-search-match { background:transparent!important; outline:none!important; }
+  .ProseMirror .hanweb-page-break { height:0; margin:0; border:0; }
+  .ProseMirror .hanweb-page-break::after { display:none; }
+  .ProseMirror .hanweb-image-frame.ProseMirror-selectednode { outline:0; }
+}

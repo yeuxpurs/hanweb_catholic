@@ -1,0 +1,17 @@
+{
+  "id": "./",
+  "name": "hanweb_catholic",
+  "short_name": "hanweb_catholic",
+  "description": "광고·회원가입 없는 무료 문서 편집기",
+  "lang": "ko",
+  "start_url": "./",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f5f7f6",
+  "theme_color": "#145c54",
+  "icons": [
+    { "src": "icon-192.png", "sizes": "192x192", "type": "image/png", "purpose": "any maskable" },
+    { "src": "icon-512.png", "sizes": "512x512", "type": "image/png", "purpose": "any maskable" },
+    { "src": "favicon.svg", "sizes": "any", "type": "image/svg+xml" }
+  ]
+}

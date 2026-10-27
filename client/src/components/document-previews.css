@@ -1,0 +1,16 @@
+.document-preview-dialog { position:fixed; inset:0; z-index:1000; display:flex; flex-direction:column; background:#e5e9ef; color:#1b2738; font:13px "Malgun Gothic","맑은 고딕",sans-serif; }
+.document-preview-toolbar { display:flex; flex-wrap:wrap; align-items:center; gap:8px; padding:10px 14px; background:white; border-bottom:1px solid #c6d0df; }
+.document-preview-toolbar strong { margin-right:auto; min-width:160px; max-width:40vw; overflow:hidden; text-overflow:ellipsis; white-space:nowrap; }
+.document-preview-toolbar button,.document-preview-toolbar select,.document-preview-toolbar input,.document-preview-toolbar a { border:1px solid #becbdc; border-radius:4px; min-height:32px; padding:4px 9px; background:white; font:inherit; color:inherit; }
+.document-preview-toolbar button:disabled { opacity:.45; cursor:default; }
+.document-preview-toolbar button:hover:enabled,.document-preview-toolbar a:hover { background:#edf4ff; }
+.document-preview-toolbar input { width:58px; }
+.document-preview-toolbar label { display:flex; align-items:center; gap:5px; }
+.document-preview-toolbar :focus-visible { outline:2px solid #2868b4; outline-offset:2px; }
+.document-preview-notice { padding:8px 14px; line-height:1.5; background:#eef4fd; border-bottom:1px solid #c6d0df; }
+.document-preview-frame { width:100%; flex:1; min-height:0; border:0; background:#e5e9ef; }
+.document-preview-error,.document-preview-warning,.document-preview-loading { margin:0; padding:10px 14px; }
+.document-preview-error { color:#9a2424; background:#fff0f0; }
+.document-preview-warning { color:#795409; background:#fff5d8; }
+.document-preview-loading { text-align:center; padding:30px; }
+@media (max-width:700px) { .document-preview-toolbar { gap:5px; padding:8px; } .document-preview-toolbar strong { max-width:100%; width:100%; } .document-preview-notice { font-size:11px; } }
