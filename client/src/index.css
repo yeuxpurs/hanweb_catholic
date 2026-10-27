@@ -436,7 +436,7 @@
 .hanweb-symbol-grid { display:grid; grid-template-columns:repeat(7,minmax(0,1fr)); gap:6px; }
 .hanweb-symbol-grid button { min-height:40px; padding:6px; font-size:20px; }
 .tiptap a { color:#155fae; text-decoration:underline; text-underline-offset:2px; }
-.focus-mode .app-menubar,.focus-mode .app-ribbon,.focus-mode .additional-tools,.focus-mode .document-view-controls { display:none; }
+.focus-mode .app-menubar,.focus-mode .app-ribbon,.focus-mode .additional-tools,.focus-mode .document-view-controls { display:none!important; }
 .template-dialog { width:min(720px,calc(100vw - 32px)); max-width:720px!important; max-height:85vh; overflow:auto; }
 .template-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:12px; }
 .template-card { display:flex; flex-direction:column; align-items:flex-start; gap:10px; min-height:150px; padding:18px; border:1px solid #cbd7e5; border-radius:8px; background:#f8fbff; text-align:left; }
@@ -451,6 +451,15 @@
 .document-statistics dt { color:#52677d; }.document-statistics dd { text-align:right; font-weight:600; font-variant-numeric:tabular-nums; }
 @media screen and (max-width:600px) { .template-grid { grid-template-columns:repeat(2,minmax(0,1fr)); }.template-card { min-height:130px; padding:12px; } }
 @media screen and (max-width:800px) {
+  .app-titlebar { overflow-x:auto; white-space:nowrap; }
+  .app-titlebar>* { flex-shrink:0; }
+  .app-titlebar .brand-description { display:none; }
+  .app-statusbar { white-space:nowrap; gap:8px; }
+  .app-statusbar>div:first-child { display:none!important; }
+  .app-statusbar>div:nth-child(2) { min-width:0; justify-content:flex-start!important; overflow:auto; }
+  .app-statusbar>div:nth-child(2)>span:first-child { display:none; }
+  .app-statusbar>div:last-child { flex-shrink:0; }
+  .app-statusbar>div:last-child>span:not(:last-child) { display:none; }
   .hanweb-editing-tools { max-height:28vh; overflow:auto; }
   .hanweb-tools-row { gap:6px; padding:7px 8px; }
   .hanweb-tools-row button,.hanweb-tools-row select { min-height:32px; }
